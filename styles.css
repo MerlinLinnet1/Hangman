@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff6f61;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: #ff6f61;
+  }
+  
+  .word-display {
+    font-size: 2rem;
+    letter-spacing: 10px;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #hangman-figure {
+    margin: 20px 0;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ff6f61;
+    border-radius: 5px;
+    width: 50px;
+    text-align: center;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #ff3b2f;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .guess-btn {
+    background: #ff6f61;
+    color: #fff;
+  }
+  
+  .guess-btn:hover {
+    background: #ff3b2f;
+  }
+  
+  .reset-btn {
+    background: #6b5b95;
+    color: #fff;
+  }
+  
+  .reset-btn:hover {
+    background: #4a3f6b;
+  }
+  
+  .message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ff3b2f;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  /* Contact Me Section */
+.contact-section {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #4a3f6b;
+  }
+  
+  .contact-section a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-section a:hover {
+    text-decoration: underline;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

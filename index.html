@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎮 Hangman Game</h1>
+    <p>Guess the word below! You have <span id="attempts" class="highlight">6</span> attempts left.</p>
+    <!-- Hangman SVG -->
+    <div id="hangman-figure">
+      <svg viewBox="0 0 200 200" width="200" height="200">
+        <!-- Gallows -->
+        <line x1="20" y1="180" x2="100" y2="180" stroke="#4a3f6b" stroke-width="2" />
+        <line x1="60" y1="180" x2="60" y2="20" stroke="#4a3f6b" stroke-width="2" />
+        <line x1="60" y1="20" x2="140" y2="20" stroke="#4a3f6b" stroke-width="2" />
+        <line x1="140" y1="20" x2="140" y2="40" stroke="#4a3f6b" stroke-width="2" />
+        <!-- Hangman parts (hidden by default) -->
+        <circle id="head" cx="140" cy="55" r="15" stroke="#ff6f61" stroke-width="2" fill="none" visibility="hidden" />
+        <line id="body" x1="140" y1="70" x2="140" y2="120" stroke="#ff6f61" stroke-width="2" visibility="hidden" />
+        <line id="left-arm" x1="140" y1="80" x2="110" y2="100" stroke="#ff6f61" stroke-width="2" visibility="hidden" />
+        <line id="right-arm" x1="140" y1="80" x2="170" y2="100" stroke="#ff6f61" stroke-width="2" visibility="hidden" />
+        <line id="left-leg" x1="140" y1="120" x2="110" y2="150" stroke="#ff6f61" stroke-width="2" visibility="hidden" />
+        <line id="right-leg" x1="140" y1="120" x2="170" y2="150" stroke="#ff6f61" stroke-width="2" visibility="hidden" />
+      </svg>
+    </div>
+    <p id="word-display" class="word-display"></p>
+    <p>Guessed letters: <span id="guessed-letters" class="highlight"></span></p>
+    <div class="input-container">
+      <input type="text" id="letter-input" maxlength="1" placeholder="Enter a letter">
+      <button id="guess-button" class="btn guess-btn">Guess</button>
+    </div>
+    <button id="reset-button" class="btn reset-btn">New Word</button>
+    <p id="message" class="message"></p>
+    <!-- Contact Me Section -->
+    <div class="contact-section">
+      <p>Have feedback or questions? <a href="mailto:merlinlinnet88@gmail.com">Contact Me</a></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
